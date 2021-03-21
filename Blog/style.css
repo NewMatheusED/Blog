@@ -24,7 +24,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
+    height: auto;
     width: 280px;
     background: var(--gradient);
     text-align: center;
@@ -32,12 +32,23 @@ header {
     overflow-y: auto;
     scrollbar-color: rgba(0,0,0,0.2) #5BC3D5;
     scrollbar-width: thin;
-    transition: var(--transition)
+    transition: height .4s
 }
 
 body.dark header {
     background-color: #1E2A3A;
     scrollbar-color: rgba(255,255,255,0.2) #1e2a3a;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256,256,256, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	position: absolute;
+	left: 21px;
+	top: 26px;
+	width: 30px;
+	height: 30px;
+	display: none;
+    transition: var(--transition);
 }
 
 header h1 {
@@ -149,6 +160,10 @@ body.dark article {
     color: rgba(255, 255, 255, 0.7);
 }
 
+.dark-mode-container {
+    margin-top: 10px
+}
+
 .button-body {
     margin: 0 auto;
     width: 75px;
@@ -189,4 +204,24 @@ h4.toggle-mode {
     margin-bottom: 1rem;
     margin-left: .5rem;
     font-weight: bold;
+}
+
+@media screen and (max-width: 990px) {
+    header {
+        position: relative;
+        top: 0;
+        height: 80px;
+        width: 100%;
+        overflow-y: hidden;
+
+    }
+
+    .navbar-toggler-icon {
+        display: flex;
+        transition: var(--transition)
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
 }
