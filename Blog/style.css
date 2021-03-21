@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%; 
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: var(--transition)
+}
+
+body.dark {
+	background: #151e29;
+}
+
+:root {
+    --p-color: #fff;
+    --gradient: #5BC3D5;
+    --transition: all .2s ease-in-out
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 280px;
+    background: var(--gradient);
+    text-align: center;
+    color: var(--p-color);
+    overflow-y: auto;
+    scrollbar-color: rgba(0,0,0,0.2) #5BC3D5;
+    scrollbar-width: thin;
+    transition: var(--transition)
+}
+
+body.dark header {
+    background-color: #1E2A3A;
+    scrollbar-color: rgba(255,255,255,0.2) #1e2a3a;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+header .container-persona {
+    padding: 2rem 1rem;
+}
+
+header .img-persona {
+    max-width: 170px;
+    border-radius: 50%;
+    margin-bottom: 1rem
+}
+
+header .text-persona {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+header ul.social {
+    max-width: 150px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 2rem auto 3rem auto;
+}
+
+header ul.social li a {
+    width: 32px;
+    height: 32px;
+    padding-top: 5px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    color: #5BC3D5
+}
+
+body.dark header ul.social li a {
+    background-color: #5BC3D5;
+    color: #fff
+}
+
+header ul.social li a i {
+    width: 20px;
+    height: 16px;
+}
+
+header hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    transition: var(--transition)
+}
+
+body.dark header hr {
+    border-color: rgba(255,255,255,0.08);
+}
+
+header ul.list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 120px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+header ul.list li {
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem
+}
+
+header ul.list li a:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+body.dark header ul.list li a:hover {
+    color: #5BC3D5;
+    opacity: .7s;
+}
+
+header ul.list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.main-content {
+    margin-left: 280px;
+}
+
+article {
+    padding: 3rem;
+    height: 1000px;
+    width: auto;
+    transition: var(--transition);
+}
+
+body.dark article {
+    background-color: #111821;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.button-body {
+    margin: 0 auto;
+    width: 75px;
+    height: 33px;
+    background-color: transparent;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    position: relative;
+    border-radius: 90px;
+    transition: var(--transition)
+}
+
+body.dark .button-body {
+    border-color: #5BC3D5;
+}
+  
+.button {
+    width: 22px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 9px;
+    top: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.5);
+    transition: all .2s ease-in-out;
+    z-index: 999;
+}
+
+body.dark .button {
+    background-color: #5BC3D5
+}
+
+h4.toggle-mode {
+    color: #fff;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    margin-left: .5rem;
+    font-weight: bold;
+}
