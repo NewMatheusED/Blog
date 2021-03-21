@@ -19,11 +19,11 @@ $(function() {
 
         if($('body').hasClass('clicked-nav')) {
             $('header').animate({
-                "height": autoHeight
+                "height": '80px'
             },400)
         }else{
             $('header').animate({
-                "height": '80px'
+                "height": autoHeight
             },400)
         }
     })
