@@ -175,7 +175,7 @@ article .flex-item .img {
     width: 100vw;
     height: 100vh;
     background-color: #ccc;
-    margin-left: 3rem
+    margin: 0 0 0 3rem
 }
 
 article h1 {
@@ -289,5 +289,15 @@ h4.toggle-mode {
 
     .main-content {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    article .main-flex {
+        display: block;
+    }
+
+    article .flex-item .img {
+        margin: 2rem 0 0 0;
     }
 }
