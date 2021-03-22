@@ -24,7 +24,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    height: auto;
+    height: 100%;
     width: 280px;
     background: var(--gradient);
     text-align: center;

@@ -11,19 +11,17 @@ $(function() {
 
     var el = $('header')
 
-    curHeight = el.height();
-    autoHeight = el.css('height', 'auto').height();
 
     $('.navbar-toggler-icon').click(function() {
         $('body').toggleClass('clicked-nav')
 
         if($('body').hasClass('clicked-nav')) {
             $('header').animate({
-                "height": '80px'
+                "height": '693px'
             },400)
         }else{
             $('header').animate({
-                "height": autoHeight
+                "height": '80px'
             },400)
         }
     })
