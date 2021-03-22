@@ -25,4 +25,15 @@ $(function() {
             },400)
         }
     })
+
+    window.addEventListener('resize', function() {
+        var screenW = screen.width
+
+        if(screenW > 1008) {
+            $('header').css('height', '693px')
+        } else if(screenW < 1008) {
+            $('header').css('height', '80px')
+        }
+    })
+
 })
