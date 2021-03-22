@@ -32,7 +32,7 @@ header {
     overflow-y: auto;
     scrollbar-color: rgba(0,0,0,0.2) #5BC3D5;
     scrollbar-width: thin;
-    transition: height .4s
+    transition: var(--transition);
 }
 
 body.dark header {
@@ -59,6 +59,7 @@ header h1 {
 
 header .container-persona {
     padding: 2rem 1rem;
+    transition: var(--transition);
 }
 
 header .img-persona {
@@ -149,15 +150,67 @@ header ul.list li a {
 }
 
 article {
-    padding: 3rem;
+    padding: 3.5rem;
     height: 1000px;
     width: auto;
     transition: var(--transition);
 }
 
+article .main-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+article .flex-item .img {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ccc;
+    margin-left: 3rem
+}
+
+article h1 {
+    font-size: 2.4rem;
+    margin-bottom: .25rem;
+    color: #292929;
+}
+
+article h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    color: #4f4f4f;
+}
+
+article p {
+    color: #4f4f4f;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+	font-weight: bold;
+	padding: 0.7rem 1rem;
+	transition: all 0.4s ease-in-out;
+	font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #5BC3D5;
+    border-radius: 5px;
+}
+
 body.dark article {
     background-color: #111821;
-    color: rgba(255, 255, 255, 0.7);
+}
+
+body.dark article h1 {
+    color: rgb(255, 255, 255);
+}
+
+body.dark article p, body.dark article h4 {
+    color: rgba(255,255,255,0.7);
 }
 
 .dark-mode-container {
@@ -206,7 +259,7 @@ h4.toggle-mode {
     font-weight: bold;
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 1008px) {
     header {
         position: relative;
         top: 0;
