@@ -9,8 +9,7 @@ $(function() {
         }
     })
 
-    var el = $('header')
-
+    /*******************************************/
 
     $('.navbar-toggler-icon').click(function() {
         $('body').toggleClass('clicked-nav')
@@ -25,7 +24,9 @@ $(function() {
             },400)
         }
     })
-    
+
+    /*******************************************/
+
         var screenW = screen.width
 
         if(screenW > 1008) {
