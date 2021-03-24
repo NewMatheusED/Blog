@@ -357,3 +357,9 @@ h4.toggle-mode {
         margin: 2rem 0 0 0;
     }
 }
+
+@media screen and (max-width: 550px) {
+    .second {
+        padding: 1.5rem;
+    }
+}
