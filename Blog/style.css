@@ -94,6 +94,38 @@ header ul.social li a {
     color: #5BC3D5
 }
 
+/* header ul.social li:after {
+    transition: var(--transition);
+    position: absolute;
+}
+
+header ul.social li:hover:nth-child(1):after {
+    content: 'Github';
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0.5px;
+    left: 135px;
+}
+
+header ul.social li:hover:nth-child(2):after {
+    content: 'Codepen';
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0.5px;
+    left: 187px;
+}
+
+header ul.social li:hover:nth-child(3):after {
+    content: 'Instagram';
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0.5px;
+    left: 244px;
+} */
+
 header ul.social li a:hover {
     background-color: rgba(255, 255, 255, 0.7);
 }
