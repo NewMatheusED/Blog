@@ -17,22 +17,25 @@ $(function() {
         if($('body').hasClass('clicked-nav')) {
             $('header').animate({
                 "height": '693px'
-            },400)
+            },100)
         }else{
             $('header').animate({
                 "height": '80px'
-            },400)
+            },100)
         }
     })
 
     /*******************************************/
 
-        var screenW = screen.width
+        const screenW = screen.width;
+        const windoW = window.innerWidth();
 
-        if(screenW > 1008) {
+        if(screenW >= 1008 && windoW >= 1008) {
             $('header').css('height', '693px')
-        } else if(screenW < 1008) {
+            console.log(`${screenW} maior`)
+        } else if(screenW < 1008 && windoW < 1008) {
             $('header').css('height', '80px')
+            console.log(`${screenW} menor`)
         }
 
 })

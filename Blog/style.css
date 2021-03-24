@@ -190,6 +190,7 @@ body.dark .second {
 	font-size: 2rem;
 	position: relative;
 	padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
     transition: var(--transition);
 }
 
@@ -206,6 +207,10 @@ body.dark .second h2 {
 	position: absolute;
 	left: 0;
 	top: 0;
+}
+
+.second .container p {
+    margin-bottom: 3rem;
 }
 
 article .main-flex {
