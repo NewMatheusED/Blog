@@ -258,13 +258,10 @@ article .main-flex {
     flex-direction: row;
 }
 
-article .flex-item .img {
-    max-width: 250px;
-    max-height: 250px;
-    width: 100vw;
-    height: 100vh;
-    background-color: #ccc;
-    margin: 0 0 0 3rem
+article .flex-item img {
+    max-width: 400px;
+    margin: 0 0 0 3rem;
+
 }
 
 article h1 {
@@ -361,6 +358,18 @@ h4.toggle-mode {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1160px) {
+    article .flex-item img {
+        max-width: 350px
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    article .flex-item img {
+        max-width: 300px
+    }
+}
+
 @media screen and (max-width: 1008px) {
     header {
         position: relative;
@@ -378,6 +387,15 @@ h4.toggle-mode {
     .main-content {
         margin-left: 0;
     }
+
+    article .main-flex {
+        flex-direction: column;
+    }
+
+    article .flex-item img {
+        max-width: 400px;
+        margin: 2rem 0 0 0;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -393,5 +411,9 @@ h4.toggle-mode {
 @media screen and (max-width: 550px) {
     .second {
         padding: 1.5rem;
+    }
+
+    article .flex-item img {
+        max-width: 100%;
     }
 }
