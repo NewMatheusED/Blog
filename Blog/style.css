@@ -17,7 +17,10 @@ body.dark {
 :root {
     --p-color: #fff;
     --gradient: #5BC3D5;
-    --transition: all .2s ease-in-out
+    --transition: all .2s ease-in-out;
+    --bd-dark: #111821;
+    --color-p: #4f4f4f;
+    --bg-light: #FAFAFA
 }
 
 header {
@@ -198,24 +201,24 @@ article {
 
 .first {
     padding: 3.5rem;
-    background-color: #FAFAFA;
+    background-color: var(--gb-light);
     transition: var(--transition);
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 body.dark .first {
-    background-color: #111821;
+    background-color: var(--bg-dark);
     transition: var(--transition);
 }
 
 .second {
     padding: 3.5rem;
     transition: var(--transition);
-    background-color: #FAFAFA;
+    background-color: var(--gb-light);
 }
 
 body.dark .second {
-    background-color: #111821;
+    background-color: var(--bg-dark);
     transition: var(--transition);
 }
 
@@ -274,11 +277,11 @@ article h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 300;
-    color: #4f4f4f;
+    color: var(--color-p);
 }
 
 article p {
-    color: #4f4f4f;
+    color: var(--color-p);
     line-height: 1.5;
     margin-bottom: 1.5rem;
 }
@@ -291,7 +294,7 @@ article p {
 	font-size: 1rem;
     text-decoration: none;
     color: white;
-    background-color: #5BC3D5;
+    background-color: var(--gradient);
     border-radius: 5px;
 }
 
@@ -301,7 +304,7 @@ article p {
 }
 
 body.dark article {
-    background-color: #111821;
+    background-color: var(--bg-dark);
 }
 
 body.dark article h1 {
@@ -329,7 +332,7 @@ body.dark article p, body.dark article h4 {
 }
 
 body.dark .button-body {
-    border-color: #5BC3D5;
+    border-color: var(--gradient);
 }
   
 .button {
@@ -347,7 +350,7 @@ body.dark .button-body {
 }
 
 body.dark .button {
-    background-color: #5BC3D5
+    background-color: var(--gradient)
 }
 
 h4.toggle-mode {
