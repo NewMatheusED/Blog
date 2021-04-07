@@ -218,7 +218,7 @@ body.dark .first {
 }
 
 body.dark .second {
-    background-color: var(--bg-dark);
+    background-color: #111821;
     transition: var(--transition);
 }
 
