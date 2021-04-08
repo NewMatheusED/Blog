@@ -31,7 +31,7 @@ $(function() {
         const windoW = window.innerWidth;
 
         if(screenW >= 1008 || windoW >= 1008) {
-            $('header').css('height', '693px')
+            $('header').css('height', '100vh')
             console.log(`${screenW} maior. Screen`)
             console.log(`${windoW} maior. Window`)
         } else if(screenW < 1008 || windoW < 1008) {
